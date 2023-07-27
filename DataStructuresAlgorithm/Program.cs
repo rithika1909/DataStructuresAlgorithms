@@ -7,9 +7,7 @@ namespace DataStructuresAlgorithm
         static void Main(string[] args)
         {
             Console.WriteLine("Enter the Option:\n 1.Binary Search\n 2.Anagram\n 3.Replace String\n 4.Insertion Sort\n 5.Bubble Sort\n 6.Prime Numbers\n 7.Exit");
-            
             bool flag = true;
-            
             while(flag) 
             {
                 int option = Convert.ToInt32(Console.ReadLine());
@@ -51,9 +49,6 @@ namespace DataStructuresAlgorithm
                         break;
                 }
             }
-
-           
-            
         }
     }
 }

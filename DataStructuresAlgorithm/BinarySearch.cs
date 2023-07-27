@@ -20,7 +20,6 @@ namespace DataStructuresAlgorithm
                 {
                     isFind = true;
                 }
-               
             }
             if (isFind)
                 Console.WriteLine("Search element {0} found", key);

@@ -20,12 +20,7 @@ namespace DataStructuresAlgorithm
                     j--;
                 }
                 array[j + 1] = key;
-
             }
-
-
-
         }
-
     }
 }

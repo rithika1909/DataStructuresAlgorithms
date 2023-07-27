@@ -10,27 +10,22 @@ namespace DataStructuresAlgorithm
     {
         public void CheckforPrime()
         {
-            bool isPrimeNo = true;
-            Console.WriteLine("Prime Numbers : ");
-            for (int i = 2; i <= 1000; i++)
+            Console.WriteLine("Prime numbers between 0 and 1000 Are :");
+            for (int num = 2; num <= 1000; num++)
             {
-                for (int j = 2; j <= 1000; j++)
+                bool isPrime = true;
+                for (int i = 2; i <= num / 2; i++)
                 {
-
-                    if (i != j && i % j == 0)
+                    if (num % i == 0)
                     {
-                        isPrimeNo = false;
-
+                        isPrime = false;
                         break;
                     }
-
                 }
-                if (isPrimeNo)
+                if (isPrime)
                 {
-
-                    Console.Write("\t" + i);
+                    Console.WriteLine(num + " ");
                 }
-                isPrimeNo = true;
             }
         }
     }
