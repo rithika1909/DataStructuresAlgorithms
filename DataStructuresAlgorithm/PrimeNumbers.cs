@@ -16,18 +16,14 @@ namespace DataStructuresAlgorithm
             {
                 for (int j = 2; j <= 1000; j++)
                 {
-
                     if (i != j && i % j == 0)
                     {
                         isPrimeNo = false;
-
                         break;
                     }
-
                 }
                 if (isPrimeNo)
                 {
-
                     Console.Write("\t" + i);
                 }
                 isPrimeNo = true;
