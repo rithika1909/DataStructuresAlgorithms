@@ -30,6 +30,20 @@ namespace DataStructuresAlgorithm
                         replaceString.StringReplace();
                         break;
                     case 4:
+                        InsertionSort sort = new InsertionSort();
+                        Console.WriteLine("Enter a list of words:");
+                        string input = Console.ReadLine();
+                        string[] words = input.Split(new char[] { ' ' });
+
+
+
+                        sort.SortArray(words);
+                        Console.WriteLine("Sorted List:");
+                        Console.WriteLine(string.Join(" ", words));
+                        break;
+
+                      
+                    case 5:
                         flag = false;
                         break;
                 }
