@@ -6,7 +6,7 @@ namespace DataStructuresAlgorithm
         static string FilePath = @"D:\DataStructuresAlgorithm\Files\Search.txt";
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter the Option:\n 1.Binary Search\n 2.Exit");
+            Console.WriteLine("Enter the Option:\n 1.Binary Search\n 2.Anagram\n 3.Replace String\n 4.Insertion Sort\n 5.Bubble Sort\n 6.Exit");
             
             bool flag = true;
             
@@ -41,9 +41,13 @@ namespace DataStructuresAlgorithm
                         Console.WriteLine("Sorted List:");
                         Console.WriteLine(string.Join(" ", words));
                         break;
+                    case 5:
+                        BubbleSort bubbleSort   = new BubbleSort();
+                        bubbleSort.SortByBubble();
+                        break;
 
                       
-                    case 5:
+                    case 6:
                         flag = false;
                         break;
                 }
