@@ -13,16 +13,16 @@ namespace DataStructuresAlgorithm
             Console.WriteLine("Prime numbers between 0 and 1000 Are :");
             for (int num = 2; num <= 1000; num++)
             {
-                bool isPrime = true;
+                bool isPrimeNum = true;
                 for (int i = 2; i <= num / 2; i++)
                 {
                     if (num % i == 0)
                     {
-                        isPrime = false;
+                        isPrimeNum = false;
                         break;
                     }
                 }
-                 if (isPrime)
+                 if (isPrimeNum)
                 {
                     Console.WriteLine(num + " ");
                 }
